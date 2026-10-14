@@ -391,4 +391,9 @@ def main_page():
 
         render_contenido()
 
-ui.run(title='Un jardín para Jasmín', port=int(os.environ.get('PORT', 8080)), favicon='🌻', host='0.0.0.0')
+ui.run(
+    title="Un jardín para Jazmín",
+    host="0.0.0.0",
+    port=int(os.environ.get("PORT", 8080)),
+    reload=False,
+)
